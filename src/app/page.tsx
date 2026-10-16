@@ -2,7 +2,11 @@ import { Hero } from "@/components/hero"
 import { Nav } from "@/components/nav"
 import { WorkTimeline } from "@/components/work-timeline"
 import { PERSONAL } from "@/data/work"
-import { ControlRoom } from "@/components/control-room"
+import { ClientWork } from "@/components/client-work"
+import { AboutFocus } from "@/components/about-focus"
+import { ServicesRender } from "@/components/services-render"
+import { ContactSlate } from "@/components/contact-slate"
+import { EndCredits } from "@/components/end-credits"
 
 export default function Home() {
   return (
@@ -10,10 +14,11 @@ export default function Home() {
       <Nav />
       <Hero />
       <WorkTimeline reel={PERSONAL} />
-      <ControlRoom />
-      <section id="about" className="grid min-h-[60svh] place-items-center bg-storm-950 text-storm-400">
-        <p className="font-mono text-xs uppercase tracking-[0.3em]">About — coming next</p>
-      </section>
+      <ClientWork />
+      <AboutFocus />
+      <ServicesRender />
+      <ContactSlate />
+      <EndCredits />
     </main>
   )
 }
